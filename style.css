@@ -11,10 +11,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   font-family: 'Outfit', sans-serif;
 }
@@ -25,8 +21,6 @@ body {
 
 .background-container {
   background-color: hsl(212, 45%, 89%);
-  max-width: 144rem;
-  margin: 0 auto;
   min-height: 100vh;
 
   display: flex;
@@ -37,13 +31,13 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.2rem;
+  gap: calc(12rem / 16);
 }
 
 .content-box {
-  max-width: 30rem;
+  max-width: calc(300rem / 16);
   background-color: #fff;
-  padding: 1.2rem;
+  padding: calc(12rem / 16);
   border-radius: 12px;
 }
 
@@ -59,15 +53,15 @@ body {
 
 .title {
   color: hsl(218, 44%, 22%);
-  font-size: 2rem;
+  font-size: calc(20rem / 16);
   line-height: 1.4;
   text-align: center;
 }
 
 .paragraph {
   color: hsl(220, 15%, 55%);
-  font-size: 1.5rem;
-  padding-bottom: 2.4rem;
+  font-size: calc(15rem / 16);
+  padding-bottom: calc(24rem / 16);
   text-align: center;
 }
 
